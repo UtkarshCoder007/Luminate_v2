@@ -1,14 +1,54 @@
-# Backend
+# ── Backend ───────────────────────────────────────────────────────────────────
+HELP.md
 backend/target/
-backend/.idea/
-backend/*.iml
-backend/.env
+backend/.mvn/wrapper/maven-wrapper.jar
+!backend/**/src/main/**/target/
+!backend/**/src/test/**/target/
 
-# Frontend
+# IntelliJ IDEA
+.idea
+*.iws
+*.iml
+*.ipr
+
+# STS
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+
+# NetBeans
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+build/
+!backend/**/src/main/**/build/
+!backend/**/src/test/**/build/
+
+# VS Code
+.vscode/
+
+# Environment files — never commit secrets
+backend/.env
+.env
+
+# ── Frontend ──────────────────────────────────────────────────────────────────
 frontend/.next/
 frontend/node_modules/
 frontend/.env.local
+frontend/.env.development.local
+frontend/.env.test.local
+frontend/.env.production.local
+frontend/npm-debug.log*
+frontend/yarn-debug.log*
+frontend/yarn-error.log*
 
-# General
+# ── General ───────────────────────────────────────────────────────────────────
 .DS_Store
 *.log
+Thumbs.db
